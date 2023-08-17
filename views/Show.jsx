@@ -4,7 +4,7 @@ export default function Show({element}) {
     return(
         <div>
             <h1>{element.title}</h1>
-            <h3>{element.title}</h3>
+            <h3>{element.entry}</h3>
             <p>{element.shipIsBroken ? 'The Ship is Broken' : 
             'The Ship is not Broken'}</p>
             <h4>{element.createdAt.toISOString().slice(0, 16)}</h4>
