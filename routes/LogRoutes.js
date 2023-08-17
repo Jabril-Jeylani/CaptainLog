@@ -12,6 +12,7 @@ router.get('/new', logController.new)
 
 router.post('/', logController.create)
 
+router.get('/:id', logController.show)
 
 
 module.exports = router

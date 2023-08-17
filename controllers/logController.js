@@ -22,7 +22,17 @@ module.exports.create = async (req, res) => {
 
 module.exports.index = async (req,res) => {
     try {
-        res.send('index')
+        const log = await Log.find()
+        res.render('Index', {log})
+        console.log('LOG', log)
+    } catch (error) {
+        console.log(error.message)
+    }
+}
+
+module.exports.show = async (req,res) => {
+    try {
+        res.send('show')
     } catch (error) {
         console.log(error.message)
     }
