@@ -5,6 +5,7 @@ export default function Show({element}) {
         <div>
             <h1>{element.title}</h1>
             <h3>{element.entry}</h3>
+            <br />
             <p>{element.shipIsBroken ? 'The Ship is Broken' : 
             'The Ship is not Broken'}</p>
             <h4>{element.createdAt.toISOString().slice(0, 16)}</h4>
