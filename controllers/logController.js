@@ -32,7 +32,8 @@ module.exports.index = async (req,res) => {
 
 module.exports.show = async (req,res) => {
     try {
-        res.send('show')
+        const element = await Log.findById(req.params.id)
+        res.render('show', {element})
     } catch (error) {
         console.log(error.message)
     }
