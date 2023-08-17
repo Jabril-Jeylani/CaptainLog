@@ -8,4 +8,6 @@ const router = express.Router()
 
 router.get('/new', logController.new)
 
+router.post('/', logController.create)
+
 module.exports = router
