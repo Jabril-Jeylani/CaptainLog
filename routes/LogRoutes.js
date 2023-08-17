@@ -6,8 +6,12 @@ const router = express.Router()
 
 //induces
 
+router.get('/', logController.index)
+
 router.get('/new', logController.new)
 
 router.post('/', logController.create)
+
+
 
 module.exports = router

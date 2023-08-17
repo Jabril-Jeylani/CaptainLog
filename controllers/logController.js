@@ -18,5 +18,12 @@ module.exports.create = async (req, res) => {
     } catch (error) {
         console.log(error.message)
     }
-    
+}
+
+module.exports.index = async (req,res) => {
+    try {
+        res.send('index')
+    } catch (error) {
+        console.log(error.message)
+    }
 }
